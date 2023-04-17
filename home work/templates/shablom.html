@@ -1,0 +1,10 @@
+<h1>Привет, {{ user.name }}</h1>
+<p>Твой номер: {{ user.phone }}</p>
+
+{% for item in items %}
+    <p>{{ item }}</p>
+{% endfor%}
+
+{%if is_block%}
+    <p>Вам заблокирован доступ</p>
+{% endif %}
